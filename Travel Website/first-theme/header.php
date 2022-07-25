@@ -13,9 +13,10 @@
   
   </head> 
   
-  <body <?php body_class(); ?>>
+  <body <?php body_class(! is_front_page() ? "inner-page" : ""); ?>>
     <header>
       <div id="top">
+        <?php get_search_form();?>
 
       </div>
       <!-- end top -->
@@ -40,9 +41,7 @@
         </nav>
       </div>
       <!-- end inner-header -->
-      <div id="hero">
-
-      </div>
+      
       <!-- end hero -->
 
     </header>

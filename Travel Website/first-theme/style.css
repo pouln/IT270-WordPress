@@ -13,6 +13,7 @@ Date: July 2022
 body {
   background: rgb(252, 10, 10);
 }
+
 #wrapper {
   width: 1200px;
   margin: 20px auto;
@@ -20,11 +21,16 @@ body {
 
 header {
   background: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #top {
   background: orange;
-  height: 60px;
+  padding: 10px 30px 10px 10px;
+  overflow: hidden;
 }
 
 #inner-header {
@@ -32,17 +38,30 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px 10px 0;
+  clear: both;
 }
 
 #hero {
   background: lightblue;
-  height: 400px;
+}
+
+#hero {
+  background-image: url(https://codingbypoul.com/it270/site1/wp-content/uploads/yellowstone-header-home.jpg);
+  background-position: 0 100px;
+  min-height: 550px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+#hero img {
+  display: none;
 }
 
 main {
   width: 62%;
   float: left;
 }
+
 aside {
   float: right;
   width: 35%;
@@ -70,8 +89,9 @@ footer {
   margin-left: 15px;
 }
 
-#site-navigation > li:last-of-type {
-  margin-right: 15px;
+#site-navigation li a {
+  text-decoration: none;
+  padding-bottom: 5px;
 }
 
 .sub-menu {
@@ -87,6 +107,15 @@ footer {
 
 #site-navigation li:hover .sub-menu li {
   margin-left: 0;
+  float: none;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+#top #searchform {
+  float: right;
 }
 
 p {
@@ -134,7 +163,16 @@ label {
 
 /* the beginning of our media queries*/
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 1450px) {
+  #hero {
+    background-image: none;
+    margin-top: 100px;
+    min-height: auto;
+  }
+
+  #hero {
+    display: block;
+  }
   /* Navigation Button
 	-------------------------------------------------------- */
 

@@ -3,7 +3,9 @@
 ?>
   <!-- the index.php is assigned to the BLOG PAGE -->
   <!-- our question of the day is if we have any post or pages, show them!!  -->
-
+  <div id="hero">
+    <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-header-home.jpg" alt="yellowstone">
+  </div>
   <div id="wrapper">
 
     <?php if(have_posts()): ?>
