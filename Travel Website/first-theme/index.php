@@ -4,6 +4,11 @@
 for all of our posts -->
 
   <div id="wrapper">
+
+  <div id="hero">
+  <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-inner.jpg" alt="yellowstone">
+  </div>
+  <!-- end hero -->
     <main>
       <!-- our qustion of the day is,
       if we have any posts or pages, show them!!! -->

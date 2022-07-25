@@ -6,6 +6,8 @@
   <div id="hero">
     <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-header-home.jpg" alt="yellowstone">
   </div>
+  <!-- end hero -->
+
   <div id="wrapper">
 
     <?php if(have_posts()): ?>

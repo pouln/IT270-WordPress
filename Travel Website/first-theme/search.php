@@ -66,7 +66,7 @@ for all of our posts -->
       <?php endif; ?>
     </main>
     <aside>
-      This is my search .php page!
+      This is my search.php page!
     </aside>
 
   </div>

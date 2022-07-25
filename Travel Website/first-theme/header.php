@@ -17,9 +17,9 @@
     <header>
       <div id="top">
         <?php get_search_form();?>
-
       </div>
       <!-- end top -->
+      
       <div id="inner-header">
         <a href="<?php echo get_home_url() ; ?>">
           <img src="<?php echo get_template_directory_uri() ; ?>/images/logo.png" alt="logo" id="logo">
@@ -42,6 +42,4 @@
       </div>
       <!-- end inner-header -->
       
-      <!-- end hero -->
-
     </header>

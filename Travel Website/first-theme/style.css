@@ -11,12 +11,7 @@ Date: July 2022
 }
 
 body {
-  background: rgb(252, 10, 10);
-}
-
-#wrapper {
-  width: 1200px;
-  margin: 20px auto;
+  background: lightpink;
 }
 
 header {
@@ -25,36 +20,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-}
-
-#top {
-  background: orange;
-  padding: 10px 30px 10px 10px;
-  overflow: hidden;
-}
-
-#inner-header {
-  background: tan;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px 10px 0;
-  clear: both;
-}
-
-#hero {
-  background: lightblue;
-}
-
-#hero {
-  background-image: url(https://codingbypoul.com/it270/site1/wp-content/uploads/yellowstone-header-home.jpg);
-  background-position: 0 100px;
-  min-height: 550px;
-  max-width: 100%;
-  background-repeat: no-repeat;
-}
-
-#hero img {
-  display: none;
 }
 
 main {
@@ -75,18 +40,77 @@ footer {
   clear: both;
 }
 
+#wrapper {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.error404 #wrapper,
+.search #wrapper {
+  margin: 140px auto 0 auto;
+}
+
+#top {
+  background: orange;
+  padding: 10px 30px 10px 10px;
+  overflow: hidden;
+}
+
+#inner-header {
+  background: tan;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px 10px 0;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  /* height: auto; */
+}
+
+#hero {
+  background: lightblue;
+}
+
+.home #hero {
+  background-image: url(https://codingbypoul.com/it270/site1/wp-content/uploads/yellowstone-header-home.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: 0 100px;
+  min-height: 550px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+#hero img {
+  display: none;
+}
+
+.inner-page #hero {
+  background-image: url(https://codingbypoul.com/it270/site1/wp-content/uploads/yellowstone-inner.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: 0 100px;
+  min-height: 350px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
 .nav-button {
   display: none;
 }
 
 #site-navigation {
   float: right;
+  /* margin-bottom: 4px; */
 }
 
 #site-navigation li {
   float: left;
   list-style-type: none;
   margin-left: 15px;
+  position: relative;
 }
 
 #site-navigation li a {
@@ -103,11 +127,23 @@ footer {
   position: absolute;
   background: #fff;
   padding: 5px;
+  top: 24px;
+  width: 180px;
 }
 
 #site-navigation li:hover .sub-menu li {
   margin-left: 0;
   float: none;
+}
+
+.thumbnail {
+  margin-bottom: 15px;
+}
+
+.not-thumbnail img {
+  width: 500px;
+  height: 100%;
+  margin-bottom: 15px;
 }
 
 .screen-reader-text {
@@ -118,12 +154,43 @@ footer {
   float: right;
 }
 
+.post,
+.posts {
+  margin-bottom: 25px;
+}
+
+.meta {
+  margin-bottom: 10px;
+}
+
+.block {
+  display: block;
+  font-style: italic;
+}
+
+.search .pagetitle {
+  margin-bottom: 10px;
+}
+
+.searching-box {
+  width: 62%;
+  float: left;
+}
+
+/* typography */
+
 p {
   margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+p + .block {
+  margin: -10px 0 10px 0;
 }
 
 .title {
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .meta span {
@@ -131,11 +198,23 @@ p {
   font-style: italic;
 }
 
+h1,
+h2,
+h3 {
+  font-family: playfair, serif;
+  color: brown;
+}
+
+a {
+  color: brown;
+}
+
 /* comment form css */
 
 label {
   display: block;
 }
+
 .comment-form-cookies-consent label {
   display: inline;
 }
@@ -161,18 +240,28 @@ label {
   margin: 10px 0 15px 30px;
 }
 
+/* end of comment form */
+
 /* the beginning of our media queries*/
 
 @media screen and (max-width: 1450px) {
-  #hero {
+  .home #hero {
     background-image: none;
     margin-top: 100px;
     min-height: auto;
   }
 
-  #hero {
+  .inner-page #hero {
+    background-image: none;
+    margin-top: 100px;
+    min-height: auto;
+  }
+  #hero img {
     display: block;
   }
+}
+
+@media only screen and (max-width: 700px) {
   /* Navigation Button
 	-------------------------------------------------------- */
 
@@ -251,6 +340,7 @@ label {
     position: static;
     background: none;
     padding: 0;
+    width: auto;
   }
 
   /* end my navigational styles */

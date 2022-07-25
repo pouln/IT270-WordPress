@@ -3,6 +3,10 @@
 <!-- the index.php is the assigned to the blog page!! blog container
 for all of our posts -->
 
+  <div id="hero">
+    <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-inner.jpg" alt="yellowstone">
+  </div>
+  <!-- end hero -->
   <div id="wrapper">
     <main>
       <!-- our qustion of the day is,
