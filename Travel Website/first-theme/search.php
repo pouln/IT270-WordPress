@@ -4,16 +4,21 @@
 for all of our posts -->
 
   <div id="wrapper">
-
-  <div id="hero">
-  <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-inner.jpg" alt="yellowstone">
-  </div>
-  <!-- end hero -->
+    <!-- We will add a happpy picture here!!!  -->
     <main>
       <!-- our qustion of the day is,
       if we have any posts or pages, show them!!! -->
       <?php if(have_posts()): ?>
       <!-- we need to show the post in a while loop in the world of PHP -->
+      <!-- We will add a happpy picture here!!!  -->
+      <h2>Serach Results For: <?php echo get_search_query() ;?>
+    </h2>
+    <!-- Add how many posts or pages exist!!!  -->
+        <p>Our findings for
+        <?php /* Search Count */
+        $allsearch = new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('<span class="search-terms">'); echo $key; _e('</span>'); _e(' &mdash; '); echo $count . ' '; _e('articles/pages'); wp_reset_query(); ?></p>
+
+
       <?php while(have_posts()): the_post(); ?>
         <article class="post">
           <h2 class="title">
@@ -50,7 +55,8 @@ for all of our posts -->
       <?php endwhile; ?>
       <?php else: ?>
       <h2>
-        Search Results:
+        No Content for:  
+        <?php echo get_search_query() ;?>
       </h2>
       <p>
         Sorry, we could not find anything regarding you search terms.
@@ -60,7 +66,7 @@ for all of our posts -->
       <?php endif; ?>
     </main>
     <aside>
-      This is my index.php page!
+      This is my search.php page!
     </aside>
 
   </div>

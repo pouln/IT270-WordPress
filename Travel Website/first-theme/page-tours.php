@@ -1,14 +1,16 @@
 <? get_header();
-/* Template Name: Front Page */
+/* Template Name: Tours Page */
 ?>
   <!-- the index.php is assigned to the BLOG PAGE -->
   <!-- our question of the day is if we have any post or pages, show them!!  -->
+
   <div id="hero">
-    <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-header-home.jpg" alt="yellowstone">
+    <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-inner.jpg" alt="yellowstone">
   </div>
   <!-- end hero -->
 
   <div id="wrapper">
+    <main>
 
     <?php if(have_posts()): ?>
       <!-- we need to show the post in a while loop in the world of PHP -->
@@ -20,6 +22,10 @@
         <?php echo wpautop('Sorry, no posts were found!'); ?>
       </h2>
     <?php endif; ?>
+    </main>
+    <aside>
+        This is my page-tours.php page!
+    </aside>
 
   </div>
   <!-- end wrapper -->
