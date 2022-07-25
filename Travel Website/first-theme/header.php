@@ -32,7 +32,7 @@
           <?php
             $args_primary = array(
               'theme_location' => 'primary',
-              'items_wrap' => '<ul class="primary-nav">%3$s</ul>'              
+              'items_wrap' => '<ul id="menu-my-primary-menu" class="primary-nav">%3$s</ul>'              
             ); ?>
           
           <?php wp_nav_menu($args_primary); ?>
