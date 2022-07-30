@@ -3,12 +3,11 @@
 <!-- the index.php is the assigned to the blog page!! blog container
 for all of our posts -->
 
-  <div id="wrapper">
-
   <div id="hero">
-  <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-inner.jpg" alt="yellowstone">
+    <img src="<?php echo get_template_directory_uri() ; ?>/images/yellowstone-inner.jpg" alt="yellowstone">
   </div>
   <!-- end hero -->
+  <div id="wrapper">
     <main>
       <!-- our qustion of the day is,
       if we have any posts or pages, show them!!! -->
@@ -54,7 +53,7 @@ for all of our posts -->
       </h2>
       <p>
         Sorry, we could not find anything regarding you search terms.
-         Would you like to seach again, using different keywords?
+          Would you like to seach again, using different keywords?
       </p>
       <?php get_search_form() ; ?>
       <?php endif; ?>
@@ -62,7 +61,6 @@ for all of our posts -->
     <aside>
       This is my index.php page!
     </aside>
-
   </div>
   <!-- end wrapper -->
 
