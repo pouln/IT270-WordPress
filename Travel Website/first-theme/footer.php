@@ -15,7 +15,7 @@
 			</li>
 			<li>All Rights Reserved</li>
 			<li><a href="">Coding By Poul</a></li>
-			<li><a href="">Valid HTML</a></a></li>
+			<li><a href="">Valid HTML</a></li>
 			<li><a href="">Valid CSS</a></li>
 		</ul>
 	</div><!-- end inner-footer -->

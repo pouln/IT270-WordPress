@@ -35,6 +35,11 @@ for all of our posts -->
           
           
         </article>
+        
+      <span class="next-previous">
+        <?php (previous_post_link()) ? '%link' : ''; ?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : ''; ?>
+      </span>
+
       <?php endwhile; ?>
       <?php else: ?>
       <h2>

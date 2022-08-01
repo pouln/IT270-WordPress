@@ -12,9 +12,7 @@ for all of our posts -->
     <h3>Or, please feel free to browse our pages</h3>
     <?php wp_list_pages() ;?>
 </main>
-<aside>
-    This is my 404.php page!
-</aside>
+<?php get_sidebar() ; ?>
 
 </div>
 <!-- end wrapper -->

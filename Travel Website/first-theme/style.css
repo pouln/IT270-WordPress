@@ -139,12 +139,26 @@ footer h2 {
   padding: 0;
 }
 
+#wrapper .third {
+  padding: 0;
+}
+
 .third:last-of-type {
   margin-right: 0;
 }
 
+.col8 {
+  float: left;
+  width: 48.93%;
+}
+
+.col8:last-of-type {
+  float: right;
+}
+
 img {
   max-width: 100%;
+  height: auto;
   /* height: auto; */
 }
 
@@ -302,9 +316,11 @@ main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   padding: 3%;
 }
 
-.third h3 {
+.third h3,
+.col8 h3 {
   font-size: 1.8em;
   margin-bottom: 10px;
+  color: #f28d35;
 }
 
 aside ul {
@@ -336,11 +352,20 @@ h1,
 h2,
 h3 {
   font-family: playfair, serif;
-  color: brown;
+  color: #a69851;
 }
 
 a {
-  color: brown;
+  color: #f28d35;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 2.4em;
 }
 
 /* comment form css */
