@@ -11,15 +11,21 @@ Date: July 2022
 }
 
 body {
-  background: lightpink;
+  /*background: lightpink;*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
 }
 
 header {
-  background: yellow;
+  /*background: yellow;*/
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  /* added padding bottom */
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #888;
 }
 
 main {
@@ -30,19 +36,27 @@ main {
 aside {
   float: right;
   width: 35%;
-  height: 400px;
-  background: lightgray;
+  /*height: 400px;*/
+  /*background: lightgray;*/
+  /*background: #ddd*/
 }
 
 footer {
-  background: rgb(122, 116, 116);
-  height: 300px;
+  /*background: rgb(122, 116, 116);*/
+  background: #ccc;
+
   clear: both;
+}
+
+footer h2 {
+  text-align: center;
+  font-size: 2.4em;
+  margin-bottom: 11px;
 }
 
 #wrapper {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px auto 40px auto;
 }
 
 .error404 #wrapper,
@@ -51,17 +65,71 @@ footer {
 }
 
 #top {
-  background: orange;
+  /*background: orange;*/
+  background: #a69851;
   padding: 10px 30px 10px 10px;
   overflow: hidden;
 }
 
 #inner-header {
-  background: tan;
+  /*background: tan;*/
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px 10px 0;
   clear: both;
+}
+
+.inner-footer {
+  /*background: tan;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  clear: both;
+}
+
+.inner-footer .third {
+  text-align: center;
+}
+
+.inner-footer ul {
+  height: 60px;
+  line-height: 60px;
+  font-size: 0.875em;
+  color: #999;
+  list-style-type: none;
+}
+
+.inner-footer a {
+  color: #999;
+}
+
+.inner-footer li {
+  float: left;
+  margin-right: 25px;
+}
+
+.row {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.row p {
+  font-size: 0.92em;
+}
+
+.third {
+  width: 31.91%;
+  float: left;
+  margin-right: 2.12%;
+  padding: 0 1%;
+}
+
+#wrapper .third {
+  padding: 0;
+}
+
+.third:last-of-type {
+  margin-right: 0;
 }
 
 img {
@@ -69,15 +137,22 @@ img {
   /* height: auto; */
 }
 
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
 #hero {
-  background: lightblue;
+  background: #fff;
 }
 
 .home #hero {
   background-image: url(https://codingbypoul.com/it270/site1/wp-content/uploads/yellowstone-header-home.jpg);
   background-attachment: fixed;
   background-size: 100%;
-  background-position: 0 100px;
+  /* added 10px to 100px to give more room */
+  background-position: 0 110px;
   min-height: 550px;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -91,8 +166,9 @@ img {
   background-image: url(https://codingbypoul.com/it270/site1/wp-content/uploads/yellowstone-inner.jpg);
   background-attachment: fixed;
   background-size: 100%;
-  background-position: 0 100px;
-  min-height: 350px;
+  /* added 10px to 100px */
+  background-position: 0 110px;
+  min-height: 370px;
   max-width: 100%;
   background-repeat: no-repeat;
 }
@@ -125,7 +201,8 @@ img {
 #site-navigation li:hover .sub-menu {
   display: block;
   position: absolute;
-  background: #fff;
+  /*background: #fff;*/
+  background: #eee;
   padding: 5px;
   top: 24px;
   width: 180px;
@@ -134,6 +211,7 @@ img {
 #site-navigation li:hover .sub-menu li {
   margin-left: 0;
   float: none;
+  line-height: 1.4;
 }
 
 .thumbnail {
@@ -178,6 +256,41 @@ img {
 }
 
 /* typography */
+
+/* add a gackground clor to the headline three */
+
+.home h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.third span a {
+  display: block;
+  color: brown;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 1.1.em;
+}
+
+aside h3 {
+  background: brown;
+  font-size: 1.4em;
+  padding: 3%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.third h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  margin-left: 5%;
+  margin-bottom: 12px;
+  list-style-type: none;
+}
 
 p {
   margin-bottom: 20px;
@@ -245,6 +358,15 @@ label {
 /* the beginning of our media queries*/
 
 @media screen and (max-width: 1450px) {
+  #inner-header {
+    padding: 10px 25px 10px 25px;
+  }
+
+  #wrapper {
+    max-width: 1200px;
+    margin: 25px;
+  }
+
   .home #hero {
     background-image: none;
     margin-top: 100px;

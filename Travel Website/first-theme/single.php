@@ -44,6 +44,8 @@ for all of our posts -->
       <?php comments_template(); ?>
     </main>
 
+    <?php get_sidebar() ; ?>
+
   </div>
   <!-- end wrapper -->
 

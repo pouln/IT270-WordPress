@@ -65,9 +65,7 @@ for all of our posts -->
       <?php get_search_form() ; ?>
       <?php endif; ?>
     </main>
-    <aside>
-      This is my search.php page!
-    </aside>
+    <?php get_sidebar() ; ?>
 
   </div>
   <!-- end wrapper -->
