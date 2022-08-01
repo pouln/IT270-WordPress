@@ -35,6 +35,11 @@ for all of our posts -->
           
           
         </article>
+        
+      <span class="next-previous">
+        <?php (previous_post_link()) ? '%link' : ''; ?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : ''; ?>
+      </span>
+
       <?php endwhile; ?>
       <?php else: ?>
       <h2>
@@ -43,6 +48,8 @@ for all of our posts -->
       <?php endif; ?>
       <?php comments_template(); ?>
     </main>
+
+    <?php get_sidebar() ; ?>
 
   </div>
   <!-- end wrapper -->

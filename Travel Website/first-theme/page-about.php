@@ -1,5 +1,5 @@
 <? get_header();
-/* Template Name: Tours Page */
+/* Template Name: About Page */
 ?>
   <!-- the index.php is assigned to the BLOG PAGE -->
   <!-- our question of the day is if we have any post or pages, show them!!  -->
@@ -13,9 +13,6 @@
     <main>
 
     <?php if(have_posts()): ?>
-            <?php if(has_post_thumbnail()): ?>
-            <?php the_post_thumbnail(); ?> 
-            <?php endif ?>
       <!-- we need to show the post in a while loop in the world of PHP -->
       <?php while(have_posts()): the_post(); ?>
         <? the_content(); ?>
@@ -26,15 +23,12 @@
       </h2>
     <?php endif; ?>
     </main>
-    
+
     <aside id="secondary" class="widget-area">
-    <?php dynamic_sidebar( 'sidebar-tours' ); ?>
-    <?php dynamic_sidebar( 'sidebar-tours-specials' ); ?>
+    <?php dynamic_sidebar( 'sidebar-about' ); ?>
     </aside><!-- end #secondary -->
 
   </div>
   <!-- end wrapper -->
-
-  <?php dynamic_sidebar( 'sidebar-buy' ); ?>
 
   <?php get_footer(); ?>

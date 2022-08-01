@@ -34,11 +34,12 @@ for all of our posts -->
           <?php if(has_post_thumbnail()): ?>
             <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail(); ?> 
-            </a> 
+            </a>
+            <?php endif ?>
           </div>
           <!-- end thumbnail -->
           
-          <?php endif ?>
+          
           <?php the_excerpt(); ?>
           <span class="block">
             <a href="<?php the_permalink();?>">Read More about <?php the_title(); ?>
@@ -58,9 +59,9 @@ for all of our posts -->
       <?php get_search_form() ; ?>
       <?php endif; ?>
     </main>
-    <aside>
-      This is my index.php page!
-    </aside>
+    
+    <?php get_sidebar() ; ?>
+  
   </div>
   <!-- end wrapper -->
 
