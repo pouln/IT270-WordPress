@@ -108,6 +108,17 @@ footer h2 {
   margin-right: 25px;
 }
 
+.inner-specials {
+  margin-top: 20px;
+  background: orange;
+  padding: 3%;
+}
+
+.inner-buy {
+  clear: both;
+  background: #ddd;
+}
+
 .row {
   overflow: hidden;
   margin-bottom: 20px;
@@ -273,12 +284,22 @@ main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   font-size: 1.1.em;
 }
 
-aside h3 {
+.inner-widget h3 {
   background: brown;
   font-size: 1.4em;
   padding: 3%;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.inner-tours h3 {
+  font-size: 1.4em;
+  color: #f28d35;
+}
+
+.inner-tours {
+  background: #eee;
+  padding: 3%;
 }
 
 .third h3 {

@@ -29,9 +29,12 @@
     
     <aside id="secondary" class="widget-area">
     <?php dynamic_sidebar( 'sidebar-tours' ); ?>
+    <?php dynamic_sidebar( 'sidebar-tours-specials' ); ?>
     </aside><!-- end #secondary -->
 
   </div>
   <!-- end wrapper -->
+
+  <?php dynamic_sidebar( 'sidebar-buy' ); ?>
 
   <?php get_footer(); ?>
