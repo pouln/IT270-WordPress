@@ -28,5 +28,8 @@
 			});    
 		});
 		</script>
+
+		<!-- add this php hook to fix the form  -->
+		<?php wp_footer(); ?> 
   </body>
 </html>

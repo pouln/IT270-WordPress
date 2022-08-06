@@ -355,6 +355,10 @@ h3 {
   color: #a69851;
 }
 
+.contact h1 {
+  text-align: center;
+}
+
 a {
   color: #f28d35;
 }
@@ -399,6 +403,23 @@ label {
   margin: 10px 0 15px 30px;
 }
 
+/* form plugin  */
+.frm_form_title {
+  font-size: 1.8em !important;
+  background: none !important;
+  padding: 0 !important;
+  color: #a69851 !important;
+}
+
+.with_frm_style legend + h3,
+.with_frm_style h3.frm_form_title {
+  margin-bottom: 10px !important;
+}
+
+.frm_button_submit {
+  background: #a69851 !important;
+  border-color: #a69851 !important;
+}
 /* end of comment form */
 
 /* the beginning of our media queries*/
