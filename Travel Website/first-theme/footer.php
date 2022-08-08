@@ -15,7 +15,7 @@
 			</li>
 			<li>All Rights Reserved</li>
 			<li><a href="">Coding By Poul</a></li>
-			<li><a hrefs="https://validator.w3.org/check?uri=referer> VALID HTML</a></li>
+			<li><a href="https://validator.w3.org/check?uri=referer"> VALID HTML</a></li>
 			<li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer">VALID CSS</a></li>	
 		</ul>
 	</div><!-- end inner-footer -->
