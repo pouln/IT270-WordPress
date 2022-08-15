@@ -1,0 +1,100 @@
+/*
+ Theme Name:   Blankslate Child Theme
+ description: 
+   A child theme of the Blank Slate default WordPress theme
+ Author:       Poul Nichols
+ Template:     blankslate
+ Version:      1.0.0
+*/
+
+body {
+  background: beige;
+}
+
+#header {
+  background: tan;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 100px 0 60px 220px;
+}
+
+#logo {
+  margin-bottom: 15px;
+}
+
+#content {
+  width: 63%;
+  float: left;
+  background: tan;
+}
+
+#sidebar {
+  width: 35%;
+  float: right;
+}
+
+.menu {
+  margin-left: 12px;
+}
+
+#footer {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Typography  */
+
+p {
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: red;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+h3 + img {
+  margin: 10px 0 15px 0;
+}
+
+img + h1 {
+  margin: 12px 0 10px 0;
+}
+
+#sidebar p {
+  font-size: 0.9em;
+}
+
+.home h1 {
+  font-size: 3em;
+}
+
+.website-2 h1 {
+  font-size: 2em;
+}
+
+.menu li {
+  line-height: 1.4;
+}
+
+.menu li a {
+  text-decoration: none;
+}
