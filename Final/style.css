@@ -299,6 +299,7 @@ header {
 
 #search-navigation {
   display: inline-block;
+  margin: 15px;
 }
 
 #nav-elements-b {
@@ -540,6 +541,10 @@ label {
   .search main,
   .archive main {
     text-align: center;
+  }
+
+  #search-navigation {
+    visibility: hidden;
   }
 
   .nav-elements #nav-elements-a {

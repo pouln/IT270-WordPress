@@ -13,6 +13,9 @@
   
   <body <?php body_class(! is_front_page() ? "inner-page" : ""); ?>>
     <header>
+          <div id="search-navigation">
+          <?php get_search_form();?>
+          </div>
       <div id="top">
         <a href="<?php echo get_home_url() ; ?>">
           <img src="<?php echo get_template_directory_uri() ; ?>/images/mylogo.png" alt="logo" id="logo">
