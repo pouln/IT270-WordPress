@@ -38,11 +38,7 @@
           
         </nav>
         </div> <!-- End nav-elements-a  -->
-        <div class="nav-elements" id="nav-elements-b">
-          <div id="search-navigation">
-          <?php get_search_form();?>
-          </div>
-        </div> <!-- End nav-elements-b  -->
+        
        
       </div>
       <!-- end inner-header -->

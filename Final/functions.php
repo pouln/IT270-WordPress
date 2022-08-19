@@ -14,9 +14,7 @@ add_theme_support('post-thumbnails');
 // Resgister our navigation
 register_nav_menus(array(
     'primary'=> 'Primary Menu',
-    'footer' => 'Footer Menu',
-    'tours' => 'Tours Menu',
-    'hotel' => 'Hotel Menu'
+    'footer' => 'Footer Menu'
 ));
 
 // enqueuing my scripts
@@ -46,24 +44,6 @@ register_sidebar(array(
 ));
 
 register_sidebar(array(
-'name' => 'Sidebar Tours',
-'id' => 'sidebar-tours',
-'before_widget' => '<div class="inner-tours">',
-'after_widget' => '</div>',
-'before_title' => '<h3>',
-'after_title' => '</h3>'
-));
-
-register_sidebar(array(
-'name' => 'Sidebar Tours Specials',
-'id' => 'sidebar-tours-specials',
-'before_widget' => '<div class="inner-specials">',
-'after_widget' => '</div>',
-'before_title' => '<h3>',
-'after_title' => '</h3>'
-));
-
-register_sidebar(array(
 'name' => 'Sidebar Contact',
 'id' => 'sidebar-contact',
 'before_widget' => '<div class="inner-widget">',
@@ -82,12 +62,30 @@ register_sidebar(array(
 ));
 
 register_sidebar(array(
-'name' => 'Sidebar Buy',
-'id' => 'sidebar-buy',
-'before_widget' => '<div class="inner-buy">',
+'name' => 'Sidebar Fantasy',
+'id' => 'sidebar-fantasy',
+'before_widget' => '<div class="inner-widget">',
+'after_widget' => '</div>',
+'before_title' => '<h3>',
+'after_title' => '</h3>'
+));
+
+register_sidebar(array(
+'name' => 'Sidebar Fiction',
+'id' => 'sidebar-fiction',
+'before_widget' => '<div class="inner-widget">',
 'after_widget' => '</div>',
 'before_title' => '<h2>',
 'after_title' => '</h2>'
+));
+
+register_sidebar(array(
+'name' => 'Sidebar Others',
+'id' => 'sidebar-others',
+'before_widget' => '<div class="inner-widget">',
+'after_widget' => '</div>',
+'before_title' => '<h3>',
+'after_title' => '</h3>'
 ));
 
 } // end function init widgets
@@ -118,78 +116,6 @@ function diwp_get_list_of_shortcodes(){
  
 }
 add_shortcode('get-shortcode-list', 'diwp_get_list_of_shortcodes');
-
-function covid_disclaimer() {
-    return '<p><small>Before you purchase you tickets, please check with everyone
-    that you can think of to make sure that you are good to go (Covid-free), because
-    these tickets are not refundable.
-    </small></p>';
-}
-
-add_shortcode('disclaimer','covid_disclaimer');
-
-function specials() {
-    //add a switch
-    // if today is Sunday, show me Sunday's special
-    if(isset($_GET['today'])) {
-        $today = $_GET['today'];
-    } else{
-        $today = date('l');
-    }
-
-    switch($today) {
-        case 'Sunday' :
-            $content = 'Today\'s special takes us to the Alaskin
-            Glaciers! Let\'s add some information about the wonderful
-            Glaciers.  To learn more about our Glacier Specials,
-            click <a href="">here!</a>';
-
-        case 'Monday' :
-            $content = 'Today\'s special takes us to the Golden State
-            of California! Let\'s add some information about the wonderful
-            wineries in California. To learn more about our California Specials,
-            click <a href="">here!</a>';
-
-        case 'Tuesday' :
-            $content = 'Today\'s special takes us to Washingtion State!
-            Let\'s add some information about the wonderful
-            wineries in Washington. To learn more about our Washington Specials,
-            click <a href="">here!</a>';
-
-        case 'Wednesday' :
-            $content = 'Today\'s special takes us to Lake Louise!
-            of California! Let\'s add some information about the wonderful
-            lakes  Candada, including Ladke Louise. To learn more about our
-            Lake Louise and British Columbia,
-            click <a href="">here!</a>';
-
-        case 'Thursday' :
-            $content = 'Today\'s special takes us to the state of Wyoming and 
-            Old Yellowstone. Some much to see at Yellowstone, form Old Faitful,
-            to Mamouth Falls, to the buffalo! To learn more about Yellowstone,
-            click <a href="">here!</a>';
-
-        case 'Friday' :
-            $content = 'Today\'s special takes us to the Golden State
-            of California! Let\'s add some information about the wonderful
-            wineries in California. To learn more about our California Specials,
-            click <a href="">here!</a>';
-
-        case 'Saturday' :
-            $content = 'Today\'s special takes us to Lake Louise!
-            of California! Let\'s add some information about the wonderful
-            lakes  Candada, including Ladke Louise. To learn more about our
-            Lake Louise and British Columbia,
-            click <a href="">here!</a>';
-
-
-    } //closing the switch
-
-    return $content;
-} //closing the function
-
-add_shortcode('today_specials','specials');
-
 
 function today_date() {
     return date('l\, F jS Y');
