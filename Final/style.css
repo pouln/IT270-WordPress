@@ -1,34 +1,494 @@
-/*+++   Images    +++*/
+/* Styles for Alishia's Books
+Name: Alishia Books
+Author: Poul Nichols
+Date:  Aug 2022
+*/
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  padding-top: 360px;
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+}
+
+.error404 #wrapper,
+.search #wrapper {
+  margin: 140px auto 0 auto;
+}
+
+#wrapper .third {
+  padding: 0;
+}
+
+#wrapper .third {
+  padding: 0;
+}
+
+.nav-button {
+  display: none;
+}
+
+#site-navigation {
+  float: right;
+  /* margin-bottom: 4px; */
+}
+
+#site-navigation li {
+  float: left;
+  list-style-type: none;
+  margin-left: 15px;
+  position: relative;
+}
+
+#site-navigation li a {
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.sub-menu {
+  display: none;
+}
+
+#site-navigation li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  /*background: #fff;*/
+  background: #eee;
+  padding: 5px;
+  top: 24px;
+  width: 180px;
+}
+
+#site-navigation li:hover .sub-menu li {
+  margin-left: 0;
+  float: none;
+  line-height: 1.4;
+}
+
+.thumbnail {
+  margin-bottom: 15px;
+}
+
+.not-thumbnail img {
+  width: 500px;
+  height: 100%;
+  margin-bottom: 15px;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+#top #searchform {
+  float: right;
+}
+
+.post,
+.posts {
+  margin-bottom: 25px;
+}
+
+.meta {
+  margin-bottom: 10px;
+}
+
+.block {
+  display: block;
+  font-style: italic;
+}
+
+.search .pagetitle {
+  margin-bottom: 10px;
+}
+
+.searching-box {
+  width: 62%;
+  float: left;
+}
+
+/*+++   Images    +++*/
+img {
+  max-width: 100%;
+  height: auto;
+  /* height: auto; */
+}
+
+#top img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 /*+++   END Images   +++*/
 /*-------------------------------------*/
 /*+++   Typography   +++*/
+blockquote {
+  font-size: 1.75em;
+  font-family: playfair, serif;
+  margin: 0 6% 20px 6%;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+}
 
+.home blockquote + p {
+  font-size: 1.3em;
+  margin: 0 4% 20px 4%;
+}
+
+.home blockquote + p::first-line {
+  color: #73653c;
+  font-weight: bold;
+}
+
+.home blockquote + p + P {
+  font-size: 1.3em;
+  margin: 0 4% 40px 4%;
+}
+
+.home h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.third span a {
+  display: block;
+  color: brown;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+
+.inner-widget h3 {
+  background: brown;
+  font-size: 1.4em;
+  padding: 3%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.inner-tours h3 {
+  font-size: 1.4em;
+  color: #f28d35;
+}
+
+.inner-tours {
+  background: #eee;
+  padding: 3%;
+}
+
+.third h3,
+.col8 h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #f28d35;
+}
+
+.inner-tours p {
+  margin-bottom: 0;
+}
+
+aside ul {
+  margin-left: 5%;
+  margin-bottom: 12px;
+  list-style-type: none;
+}
+
+.blog aside li,
+.category aside li,
+.search aside li,
+.archive aside li,
+.post-template-default aside li {
+  margin-bottom: 5px;
+}
+
+.blog aside ul,
+.category aside ul,
+.search aside ul,
+.archive aside ul,
+.post-template-default aside ul {
+  margin-bottom: 25px;
+}
+
+aside li a {
+  color: #666;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+p + .block {
+  margin: -10px 0 10px 0;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.meta span {
+  display: block;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  font-family: playfair, serif;
+  color: #a69851;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+a {
+  color: #f28d35;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 2.4em;
+}
 /*+++   END Typography   +++*/
 /*-------------------------------------*/
 /*+++   Header  +++*/
+header {
+  background: lightgreen;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #888;
+}
+
+#top {
+  background: lightblue;
+  padding: 10px 30px 10px 10px;
+  overflow: hidden;
+}
+
+#inner-header {
+  background: lightpink;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px 10px 0;
+  clear: both;
+  height: 50px;
+}
 
 /*+++   END Header  +++*/
 /*-------------------------------------*/
 /*+++   Navigation  +++*/
+.nav-elements {
+  display: inline-block;
+}
+
+#nav-elements-a {
+  margin-left: 370px;
+}
+
+#search-navigation {
+  display: inline-block;
+}
+
+#nav-elements-b {
+  margin-left: 100px;
+}
 
 /*+++   END Navigation  +++*/
 /*-------------------------------------*/
 /*+++   Body  +++*/
+body {
+  background: #f3f6f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inner-specials {
+  margin-top: 20px;
+  background: orange;
+  padding: 3%;
+}
+
+.inner-buy {
+  clear: both;
+  background: #ddd;
+}
+
+.row {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.row p {
+  font-size: 0.92em;
+}
+
+.third {
+  width: 31.91%;
+  float: left;
+  margin-right: 2.12%;
+  padding: 0 1%;
+}
+
+.third:last-of-type {
+  margin-right: 0;
+}
+
+.col8 {
+  float: left;
+  width: 48.93%;
+}
+
+.col8:last-of-type {
+  float: right;
+}
 
 /*+++   End Body  +++*/
 /*-------------------------------------*/
 /*+++   Main  +++*/
+main {
+  width: 62%;
+  float: left;
+}
+
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.blog main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image,
+.category main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image,
+.search main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image,
+.archive main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  width: auto;
+  height: auto;
+  margin-bottom: 0px;
+}
 
 /*+++   END Main  +++*/
 /*-------------------------------------*/
 /*+++   Aside  +++*/
-
+aside {
+  float: right;
+  width: 35%;
+}
 /*+++   END Aside  +++*/
 /*-------------------------------------*/
 /*+++   footer  +++*/
+footer {
+  background: #ccc;
+  clear: both;
+}
+
+footer h2 {
+  text-align: center;
+  font-size: 2.4em;
+  margin-bottom: 11px;
+}
+
+.inner-footer {
+  /*background: tan;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.inner-footer .third {
+  text-align: center;
+}
+
+.inner-footer ul {
+  height: 60px;
+  line-height: 60px;
+  font-size: 0.875em;
+  color: #999;
+  list-style-type: none;
+}
+
+.inner-footer a {
+  color: #999;
+}
+
+.inner-footer li {
+  float: left;
+  margin-right: 25px;
+}
 
 /*++++++  END footer  +++*/
+
+/*++++++  Comment Form  +++*/
+label {
+  display: block;
+}
+
+.comment-form-cookies-consent label {
+  display: inline;
+}
+
+.comment-form p {
+  margin-bottom: 10px;
+}
+
+#commentform {
+  border: 1px solid tan;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.comment-notes {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.commentlist {
+  margin: 10px 0 15px 30px;
+}
+
+/* form plugin  */
+.frm_form_title {
+  font-size: 1.8em !important;
+  background: none !important;
+  padding: 0 !important;
+  color: #a69851 !important;
+}
+
+.with_frm_style legend + h3,
+.with_frm_style h3.frm_form_title {
+  margin-bottom: 10px !important;
+}
+
+.frm_button_submit {
+  background: #a69851 !important;
+  border-color: #a69851 !important;
+}
+
+.frm_fields_container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact .frm_form_title {
+  text-align: center !important;
+}
+/*++++++  END Comment Form  +++*/
+
 /*-------------------------------------*/
 
 /*+++   PlugIn Override   +++*/
@@ -38,41 +498,308 @@
 
 /*+++   Media_Screen  +++*/
 
-/*+++   Media_Screen_Images    +++*/
+/*+++   Media_Screen  +++*/
+@media screen and (max-width: 1450px) {
+  #inner-header {
+    padding: 10px 25px 10px 25px;
+  }
 
-/*+++   END Media _Screen_Images   +++*/
+  #wrapper {
+    max-width: 1200px;
+    margin: 25px;
+  }
+}
+/*+++   END Media _Screen   +++*/
 /*-------------------------------------*/
-/*+++   Media _Screen_Typography   +++*/
+/*+++   Media _Screen   +++*/
+@media only screen and (max-width: 900px) {
+  body {
+    background: lightcyan;
+  }
 
-/*+++   END Media _Screen_Typography   +++*/
+  .third {
+    width: auto;
+    margin-right: 0;
+    float: none;
+    padding: 0 1%;
+    text-align: center;
+  }
+
+  .third img {
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  aside {
+    width: 37%;
+  }
+}
+/*+++   END Media _Screen_   +++*/
 /*-------------------------------------*/
-/*+++   Media_Screen_Header  +++*/
+/*+++   Start Media_Screen  +++*/
+@media only screen and (max-width: 700px) {
+  .blog main,
+  .blog aside,
+  .search main,
+  .archive main {
+    text-align: center;
+  }
 
-/*+++   END Media_Screen_Header  +++*/
+  header {
+    padding-top: 33px;
+  }
+
+  body {
+    padding-top: 50px;
+    font-size: 93%;
+  }
+
+  #logo {
+    margin: 0 auto;
+    display: block;
+  }
+
+  main {
+    float: none;
+    width: auto;
+  }
+
+  aside {
+    float: none;
+    width: auto;
+  }
+
+  #wrapper {
+    margin: 13px;
+  }
+
+  .search #wrapper {
+    margin: 120px 13px 20px 13px;
+  }
+
+  .col8 {
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+
+  .col8:last-of-type {
+    float: none;
+  }
+
+  .col8 img {
+    margin-bottom: 15px;
+  }
+
+  #top #searchform {
+    float: none;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+  }
+
+  .home h1 {
+    font-size: 2.2em;
+  }
+
+  .home h2 {
+    font-size: 1.8em;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  blockquote {
+    font-size: 1.4em;
+    margin: 0 3% 20px 3%;
+  }
+
+  .home blockquote + p {
+    font-size: 1.1em;
+    margin: 0 3% 20px 3%;
+  }
+
+  .home blockquote + p::first-line {
+    font-weight: normal;
+  }
+
+  .home blockquote + p + p {
+    font-size: 1.1em;
+    margin: 0 3% 40px 3%;
+  }
+
+  .inner-footer ul {
+    height: auto;
+    line-height: inherit;
+  }
+
+  .inner-footer li {
+    float: none;
+    margin-right: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* Navigation Button
+	-------------------------------------------------------- */
+
+  .nav-button {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 50px;
+    height: 35px;
+    background: url("images/menu-icon-large.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 21px, 100%;
+    cursor: pointer;
+    border: 0 none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7) inset;
+    border-radius: 5px;
+    z-index: 999;
+    text-indent: -9999px;
+  }
+  .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .nav-button.open {
+    background: url("images/close-icon-large.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 21px, 100%;
+  }
+
+  /* Navigation Bar
+	-------------------------------------------------------- */
+
+  .primary-nav {
+    width: 100%;
+    float: none;
+    background-color: #73653c; /* change the menu color */
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.2)
+    );
+    display: block;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 998;
+    clear: both;
+  }
+  .primary-nav li {
+    display: none;
+    width: 100%;
+    font-family: Arial;
+  }
+
+  /* my navigation styles */
+  #site-navigation li {
+    float: none;
+    margin-left: 0;
+  }
+
+  #site-navigation li:hover .sub-menu {
+    position: static;
+    background: none;
+    padding: 0;
+    width: auto;
+  }
+
+  /* end my navigational styles */
+
+  .primary-nav li a {
+    display: block;
+    width: 100%;
+    padding: 10px 5%;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .primary-nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-color: transparent;
+  }
+  .primary-nav > li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  /* Toggle the navigation bar open  */
+
+  .primary-nav.open {
+    height: auto;
+    padding-top: 50px;
+  }
+  .primary-nav.open li {
+    display: block;
+  }
+
+  /* Submenus – optional .parent class indicates dropdowns */
+
+  .primary-nav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-color: transparent;
+  }
+  .primary-nav li.parent > a:after {
+    content: "▼";
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+  }
+  .primary-nav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.75);
+  }
+  .primary-nav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 0 none;
+    padding: 0;
+  }
+  .primary-nav li ul a {
+    border: 0 none;
+    font-size: 12px;
+    padding: 10px 5%;
+    font-weight: normal;
+  }
+  .primary-nav li:hover ul {
+    display: block;
+    border-top: 0 none;
+  }
+} /* End Mobile Styles */
+
+/*+++   END Media _Screen_   +++*/
 /*-------------------------------------*/
-/*+++   Media_Screen_Navigation  +++*/
-
-/*+++   END Media_Screen_Navigation  +++*/
-/*-------------------------------------*/
-/*+++   Media_Screen_Body  +++*/
-
-/*+++   End Media_Screen_Body  +++*/
-/*-------------------------------------*/
-/*+++   Media_Screen_Main  +++*/
-
-/*+++   END Media_Screen_Main  +++*/
-/*-------------------------------------*/
-/*+++   Media_Screen_Aside  +++*/
-
-/*+++   END Media_Screen_Aside  +++*/
-/*-------------------------------------*/
-/*+++   Media_Screen_footer  +++*/
-
-/*++++++  END Media_Screen_footer  +++*/
-/*-------------------------------------*/
-/*+++   Media_Screen_PlugIn_Override   +++*/
-
-/*+++   END Media_Screen_PlugIn_Override   +++*/
-/*------------------------------------*/
-
-/*+++   END Media_Screen  +++*/
