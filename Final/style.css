@@ -34,7 +34,8 @@ Date:  Aug 2022
 }
 
 #site-navigation {
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
   /* margin-bottom: 4px; */
 }
 
@@ -165,10 +166,9 @@ blockquote {
 }
 
 .inner-widget h3 {
-  background: brown;
   font-size: 1.4em;
   padding: 3%;
-  color: #fff;
+  color: #565656
   margin-bottom: 10px;
 }
 
@@ -229,6 +229,7 @@ p + .block {
 }
 
 .title {
+  color: #565656;
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -242,7 +243,7 @@ h1,
 h2,
 h3 {
   font-family: playfair, serif;
-  color: #a69851;
+  color: #565656;
 }
 
 .contact h1 {
@@ -250,7 +251,7 @@ h3 {
 }
 
 a {
-  color: #f28d35;
+  color: #565656;
 }
 
 h2 {
@@ -265,7 +266,7 @@ h2 {
 /*-------------------------------------*/
 /*+++   Header  +++*/
 header {
-  background: lightgreen;
+  background: #f3f6f4;
   position: fixed;
   top: 0;
   left: 0;
@@ -275,18 +276,18 @@ header {
 }
 
 #top {
-  background: lightblue;
   padding: 10px 30px 10px 10px;
   overflow: hidden;
 }
 
 #inner-header {
-  background: lightpink;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px 10px 0;
   clear: both;
   height: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 /*+++   END Header  +++*/
@@ -294,10 +295,6 @@ header {
 /*+++   Navigation  +++*/
 .nav-elements {
   display: inline-block;
-}
-
-#nav-elements-a {
-  margin-left: 370px;
 }
 
 #search-navigation {
@@ -513,10 +510,6 @@ label {
 /*-------------------------------------*/
 /*+++   Media _Screen   +++*/
 @media only screen and (max-width: 900px) {
-  body {
-    background: lightcyan;
-  }
-
   .third {
     width: auto;
     margin-right: 0;
@@ -547,6 +540,10 @@ label {
   .search main,
   .archive main {
     text-align: center;
+  }
+
+  .nav-elements #nav-elements-a {
+    visibility: hidden;
   }
 
   header {
@@ -700,12 +697,8 @@ label {
   .primary-nav {
     width: 100%;
     float: none;
-    background-color: #73653c; /* change the menu color */
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.2)
-    );
+    background: transparent; /* change the menu color */
+
     display: block;
     height: 50px;
     margin: 0;
@@ -735,6 +728,10 @@ label {
     background: none;
     padding: 0;
     width: auto;
+  }
+
+  #top img {
+    margin-top: 30px;
   }
 
   /* end my navigational styles */
